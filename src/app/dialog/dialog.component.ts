@@ -1,3 +1,4 @@
+import { OverlayRef } from '@angular/cdk/overlay';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DialogComponent implements OnInit {
 
-  constructor() { }
+  constructor(private overlayRef: OverlayRef) { }
 
   ngOnInit() {
   }
 
   close() {
-
+    this.overlayRef.detach();
   }
 
 }
