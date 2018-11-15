@@ -16,6 +16,7 @@ import { SharedMaterialModule } from './shared-material/shared-material.module';
     BrowserAnimationsModule,
     SharedMaterialModule
   ],
+  entryComponents: [DialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
